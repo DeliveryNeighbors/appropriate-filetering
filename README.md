@@ -33,6 +33,7 @@ Just join website http://104.154.113.3/
 POST /chk
 ```
 ***Request**
+
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `text` | `json` | **Required**. 비속어 필터링 할 문장 |
