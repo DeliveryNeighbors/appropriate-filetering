@@ -5,26 +5,22 @@ info:
   version: 0.0.1
 
 servers:
-  - url: https://endpoint.ainize.ai/minsulee2/primality-test/
+  - url: https://endpoint.ainize.ai/hjh010501/appropriate-filetering/
 
 paths:
   /chk:
     post:
-      parameters:
-        - name: number
-          in: query
-          required: true
-          allowReserved: true
+      summary: classification bad word
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+              example:
+                text: "욕"
       responses:
         '200':
-          content:
-            applicatioin/json:
-              schema:
-                type: string
-                properties:
-                  result:
-                    type: string
-        '400':
-          description: Bad Request Error
-        default:
-          description: Unexpected Error
+          description: OK
