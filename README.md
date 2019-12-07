@@ -32,10 +32,10 @@ Just join website http://104.154.113.3/
 ```http
 POST /chk
 ```
-***Request***
+***Request**
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `text` | `json` | **Required**. 비속어 필터링 할 문장 |
 
-***Responses***
+**Responses**
 욕 or 욕아님
