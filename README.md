@@ -3,6 +3,8 @@
 # 인공지능 기반 한국어 비속어 필터링
 [![Run on Ainize](https://ainize.ai/static/images/run_on_ainize_button.svg)](http://104.154.113.3/)
 
+Ainize: https://ainize.web.app/redirect?git_repo=github.com/hjh010501/appropriate-filetering
+
 인공지능을 기반으로 하여 문장의 비속어를 파악하는 HTTP API
 
 음소, 음절별로 문장을 분해하여 인공지능을 통해 비속어 여부를 분석 할 수 있습니다.
