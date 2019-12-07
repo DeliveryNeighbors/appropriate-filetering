@@ -1,4 +1,4 @@
-from flask import Flask, request, Response
+from flask import Flask, request, Response, render_template
 from flask_cors import CORS
 import tensorflow as tf
 import numpy as np
@@ -38,11 +38,7 @@ def predict(text):
         poornag = '욕'
     return poornag
 
-
-
-
-
-@app.route('/', methods=['POST'])
+@app.route('/chk', methods=['POST'])
 def upload_train():
     data = request.get_json()
     print(data['text'])
@@ -56,5 +52,8 @@ def upload_train():
 
     return poornag, 200
 
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-app.run(port=5000, debug=True, threaded=True)
+app.run(port=80, debug=True, threaded=True)

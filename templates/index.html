@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="border-radius: 50%;">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+<div class="title">
+  <div class="traffic">
+    <div id="close"></div>
+  </div>
+  <div class="title_content">비속어필터링</div>
+</div>
+  <head>
+    <meta charset="UTF-8">
+    <title>📄</title>
+  </head>
+  <body>
+    <div class="app">
+        <div class="left">
+            <div class="divide-title">필터링 할 문장</div>
+            <div id="ori-sentence-list" class="divide-content">
+            </div>
+            <div class="divide-input">
+                <input type="text" id="ori-sentence-input" placeholder="문장을 입력해주세요" onkeydown="JavaScript:addSentence();">
+            </div>
+        </div>
+        <div class="right">
+                <div class="divide-title">필터링 된 문장</div>
+                <div id="result-sentence-list" class="divide-content">
+                    
+                </div>
+        </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/sentence.js') }}"></script>
+</html>
